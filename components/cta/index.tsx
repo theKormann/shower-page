@@ -43,7 +43,7 @@ export function CtaSection() {
             </a>
           </div>
           <p className="text-[0.55rem] text-primary-foreground/80 mt-4">
-            Pacotes com banhos e tosas ilimitados com supervisão do seu médico veterinário.
+            Pacotes com banhos ilimitados, sempre considere a moderação, visando a saúde e o bem-estar do seu pet.
           </p>
         </motion.div>
       </div>

@@ -1,9 +1,19 @@
-"use client"
+'use client'
 
 import { useRef } from "react"
+import Image from "next/image"
 import { motion, useInView } from "framer-motion"
-import { Camera, Award, Sparkles, ShowerHead, HeartHandshake, Leaf, PawPrint, Smile } from "lucide-react"
+import {
+  Camera,
+  Sparkles,
+  ShowerHead,
+  HeartHandshake,
+  Leaf,
+  PawPrint,
+  Smile,
+} from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import TrophyImage from "@/public/images/trophy.png" // ← import da imagem
 
 const services = [
   {
@@ -17,7 +27,15 @@ const services = [
     description: "Acompanhe o banho e tosa do seu pet em tempo real, com total transparência e segurança.",
   },
   {
-    icon: <Award className="h-6 w-6 text-amber-500" />,
+    icon: (
+      <Image
+        src={TrophyImage}
+        alt="Troféu"
+        width={100}
+        height={100}
+        className="h-6 w-6"
+      />
+    ),
     title: "Equipe Premiada",
     description: "Nossos banhistas possuem certificações e prêmios reconhecidos nacionalmente no ramo pet.",
   },
@@ -74,8 +92,9 @@ export default function GroomingSection() {
   }
 
   return (
-    <section id="services"
-      className=" flex justify-center w-full py-16 md:py-24 bg-gradient-to-b from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950"
+    <section
+      id="services"
+      className="flex justify-center w-full py-16 md:py-24 bg-gradient-to-b from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950"
       ref={ref}
     >
       <div className="container px-4 md:px-6">
@@ -102,7 +121,9 @@ export default function GroomingSection() {
             <motion.div key={index} variants={itemVariants}>
               <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                 <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                  <div className="rounded-full bg-white dark:bg-gray-800 p-3">{service.icon}</div>
+                  <div className="rounded-full bg-white dark:bg-gray-800 p-3">
+                    {service.icon}
+                  </div>
                   <CardTitle className="text-lg">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
