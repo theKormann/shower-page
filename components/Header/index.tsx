@@ -23,7 +23,7 @@ const Header = () => {
   const menuData = [
     { title: "Início", path: "/" },
     { title: "Pacotes", path: "#packages" },
-    { title: "Sobre Nós", path: "/sobre" },
+    { title: "Sobre Nós", path: "#cta" },
     { title: "Contato", path: "https://wa.me/551128351614" },
   ];
 
@@ -54,7 +54,8 @@ const Header = () => {
             <div className="flex items-center gap-5">
 
               <Link 
-                href="/agendamento" 
+                href="https://wa.me/551128351614"
+                target="_blank" 
                 className="hidden lg:block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200"
               >
                 Agendar Banho

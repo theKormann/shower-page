@@ -14,7 +14,8 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="mt-[100px] w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900 dark:to-green-900 overflow-hidden">
+    <section id="hero" 
+    className="mt-[100px] w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900 dark:to-green-900 overflow-hidden">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -95,6 +96,8 @@ export function HeroSection() {
                   alt="Cachorro sendo cuidado no pet shop"
                   width={600}
                   height={600}
+                  priority
+                  loading="eager"
                   className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
                 />
               </div>
@@ -102,15 +105,6 @@ export function HeroSection() {
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white">
                 <h3 className="text-lg font-semibold">Equipe Profissional</h3>
                 <p className="text-sm opacity-80">Dedicada ao bem-estar do seu pet</p>
-              </div>
-            </div>
-
-            <div className="absolute -bottom-6 -left-6 z-10 rounded-xl border border-blue-200/50 dark:border-blue-700/50 bg-white dark:bg-gray-900 p-4 shadow-lg">
-              <div className="flex items-center gap-3">
-                <div>
-                  <p className="text-sm font-semibold">98% Satisfação</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">Baseado em 1000+ avaliações</p>
-                </div>
               </div>
             </div>
           </motion.div>

@@ -94,34 +94,28 @@ import React from "react";
           </h2>
           <ul className="space-y-3">
             <li>
-              <a href="/my-account" className="hover:text-blue-500 transition duration-200">
-                Minha Conta
+              <a href="#" className="hover:text-blue-500 transition duration-200">
+                início
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500 transition duration-200">
-                Login / Registrar
+              <a href="#services" className="hover:text-blue-500 transition duration-200">
+                Diferenciais
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500 transition duration-200">
-                Carrinho
+              <a href="#prices" className="hover:text-blue-500 transition duration-200">
+                Assinaturas
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500 transition duration-200">
-                Favoritos
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500 transition duration-200">
-                Comprar
+              <a href="#cta" className="hover:text-blue-500 transition duration-200">
+                Sobre
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Useful Links */}
         <div>
           <h2 className="text-lg font-semibold mb-6" style={{ color: primaryColor }}>
             Links úteis
@@ -143,39 +137,11 @@ import React from "react";
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500 transition duration-200">
-                FAQ’s
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-500 transition duration-200">
+              <a href="http://wa.me/551128351614" className="hover:text-blue-500 transition duration-200">
                 Contato
               </a>
             </li>
           </ul>
-        </div>
-
-        {/* Newsletter (Example - can be adapted) */}
-        <div>
-          <h2 className="text-lg font-semibold mb-6" style={{ color: primaryColor }}>
-            Assine nossa newsletter
-          </h2>
-          <p className="text-sm text-gray-600 mb-4">
-            Receba ofertas exclusivas e novidades diretamente no seu e-mail.
-          </p>
-          <div className="mt-2">
-            <input
-              type="email"
-              className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md mb-2"
-              placeholder="Seu e-mail"
-            />
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              style={{ backgroundColor: primaryColor }}
-            >
-              Assinar
-            </button>
-          </div>
         </div>
       </div>
 
@@ -189,7 +155,7 @@ import React from "react";
           <div className="flex space-x-3">
             <a href="#" aria-label="Visa">
               <Image
-                src="/images/payment-01.svg"
+                src="/images/payment/payment-01.svg"
                 alt="Visa"
                 width={50}
                 height={16}
@@ -197,7 +163,7 @@ import React from "react";
             </a>
             <a href="#" aria-label="PayPal">
               <Image
-                src="/images/payment-02.svg"
+                src="/images/payment/payment-02.svg"
                 alt="PayPal"
                 width={35}
                 height={20}
@@ -205,7 +171,7 @@ import React from "react";
             </a>
             <a href="#" aria-label="MasterCard">
               <Image
-                src="/images/payment-03.svg"
+                src="/images/payment/payment-03.svg"
                 alt="MasterCard"
                 width={45}
                 height={20}
@@ -213,7 +179,7 @@ import React from "react";
             </a>
             <a href="#" aria-label="Apple Pay">
               <Image
-                src="/images/payment-04.svg"
+                src="/images/payment/payment-04.svg"
                 alt="Apple Pay"
                 width={50}
                 height={16}
@@ -221,7 +187,7 @@ import React from "react";
             </a>
             <a href="#" aria-label="Google Pay">
               <Image
-                src="/images/payment-05.svg"
+                src="/images/payment/payment-05.svg"
                 alt="Google Pay"
                 width={50}
                 height={16}

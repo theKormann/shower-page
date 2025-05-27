@@ -74,8 +74,8 @@ export default function GroomingSection() {
   }
 
   return (
-    <section
-      className="flex justify-center w-full py-16 md:py-24 bg-gradient-to-b from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950"
+    <section id="services"
+      className=" flex justify-center w-full py-16 md:py-24 bg-gradient-to-b from-blue-50 to-green-50 dark:from-blue-950 dark:to-green-950"
       ref={ref}
     >
       <div className="container px-4 md:px-6">

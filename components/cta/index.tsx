@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 export function CtaSection() {
   return (
-    <section
+    <section id="cta"
       className="flex justify-center w-full py-20 md:py-32 relative overflow-hidden bg-gradient-to-br from-primary to-primary/70 text-primary-foreground"
     >
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]" />
@@ -29,10 +29,10 @@ export function CtaSection() {
           className="flex flex-col items-center justify-center space-y-6 text-center"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-            Agora temos assinaturas com pacotes de banho e tosa!
+            A Hovet Lilicão voltou ainda maior para a estética do seu pet!
           </h2>
           <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-            Com o <strong>Hovet Lilicão</strong>, você agenda <strong>banho e tosa</strong> de forma rápida, acompanha tudo <strong>ao vivo por câmeras</strong> e garante que seu pet receba todo o cuidado de uma <strong>equipe premiada</strong>.
+            Com o <strong>Hovet Lilicão</strong>, você agenda <strong>banho e tosa</strong> de forma rápida através de <strong>inovação e tecnologia</strong>, acompanha tudo <strong>ao vivo por câmeras</strong> e garante que seu pet receba todo o cuidado de uma <strong>equipe premiada</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <a href="#packages" className="text-lg font-semibold text-primary-foreground hover:underline">
