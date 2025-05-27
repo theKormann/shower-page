@@ -82,10 +82,10 @@ export default function FloatingBubblesBackground({
           transition={{ duration: 2 }}
           className="max-w-4xl mx-auto flex flex-col gap-8 items-center"
         >
-            
+
           <div className="w-16 h-16 rounded-full overflow-hidden bg-white p-1 shadow-md">
             <Image
-              src="/Images/logo.png" 
+              src="/intro.png" 
               alt="Logo Hovet Lilicão" 
               className="w-full h-full object-contain" 
               width={64}

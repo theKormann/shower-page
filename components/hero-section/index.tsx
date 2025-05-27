@@ -17,7 +17,6 @@ export function HeroSection() {
     <section className="mt-[100px] w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-blue-100 to-green-100 dark:from-blue-900 dark:to-green-900 overflow-hidden">
       <div className="container max-w-screen-xl mx-auto px-4 md:px-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Texto */}
           <motion.div
             className="space-y-6 text-center lg:text-left"
             initial={{ opacity: 0, x: -50 }}
@@ -81,7 +80,6 @@ export function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Imagem */}
           <motion.div
             className="relative mx-auto lg:ml-auto w-full max-w-md sm:max-w-lg"
             initial={{ opacity: 0, scale: 0.95 }}
@@ -93,7 +91,7 @@ export function HeroSection() {
             <div className="relative z-20 overflow-hidden rounded-3xl border border-blue-200/50 dark:border-blue-700/50 bg-white dark:bg-gray-900 shadow-2xl">
               <div className="aspect-square overflow-hidden">
                 <Image
-                  src="/Images/hero-image.png"
+                  src="/hero.png"
                   alt="Cachorro sendo cuidado no pet shop"
                   width={600}
                   height={600}
