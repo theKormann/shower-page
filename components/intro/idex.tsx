@@ -85,7 +85,7 @@ export default function FloatingBubblesBackground({
 
           <div className="w-16 h-16 rounded-full overflow-hidden bg-white p-1 shadow-md">
             <Image
-              src="/intro.png" 
+              src="/images/intro.png" 
               alt="Logo Hovet Lilicão" 
               className="w-full h-full object-contain" 
               width={64}

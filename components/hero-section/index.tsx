@@ -91,7 +91,7 @@ export function HeroSection() {
             <div className="relative z-20 overflow-hidden rounded-3xl border border-blue-200/50 dark:border-blue-700/50 bg-white dark:bg-gray-900 shadow-2xl">
               <div className="aspect-square overflow-hidden">
                 <Image
-                  src="/hero.png"
+                  src="/images/hero.png"
                   alt="Cachorro sendo cuidado no pet shop"
                   width={600}
                   height={600}
