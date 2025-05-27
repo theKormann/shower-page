@@ -8,7 +8,6 @@ import React from "react";
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-  FaTiktok,
   FaYoutube,
  } from "react-icons/fa";
 
@@ -22,9 +21,7 @@ import React from "react";
   return (
   <footer style={{ backgroundColor: secondaryColor, color: textColor }}>
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      {/* Footer Menu */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-        {/* Contact Information */}
         <div>
           <h2 className="text-lg font-semibold mb-6" style={{ color: primaryColor }}>
             Hovet Lilicão
