@@ -47,7 +47,7 @@ const services = [
   {
     icon: <Leaf className="h-6 w-6 text-green-500" />,
     title: "Produtos Naturais",
-    description: "Shampoos, condicionadores e cosméticos naturais, hipoalergênicos e ecologicamente corretos.",
+    description: "Shampoos, condicionadores e cosméticos naturais, hipoalergênicos e ecologicamente corretos como: (Pet Life, Ibasa, Hydra Groomers...).",
   },
   {
     icon: <PawPrint className="h-6 w-6 text-pink-500" />,
