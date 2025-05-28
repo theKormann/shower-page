@@ -6,6 +6,7 @@ import ServicesSection from '@/components/services';
 import { CtaSection } from '@/components/cta';
 import { PricesSection } from '@/components/prices';
 import React from 'react';
+import { Steps } from '@/components/steps';
 
 export default function MainPage() {
     return (
@@ -15,6 +16,7 @@ export default function MainPage() {
             <ServicesSection />
             <CtaSection />
             <PricesSection />
+            <Steps />
             <Footer />
         </>
     );
