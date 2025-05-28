@@ -11,22 +11,36 @@ export function PricesSection() {
   const plansData = {
     Mini: [
       {
-        name: "Pacote cães mini (até 3kg)",
+        name: "Plano Plus Mini (até 3kg)",
         price: "R$ 120,00",
-        description: "Ideal para pets bem pequenos que adoram brincar na chuva!",
+        description: "Para pets pequenos que adoram carinho extra!",
         features: [
           "Sorteio",
           "Agendamento online",
           "Monitoramento por câmeras",
           "Produtos premium",
         ],
-        cta: "Assinar Pacote",
+        cta: "Assinar Plus",
         popular: false,
+      },
+      {
+        name: "Plano Brilhante Mini (até 3kg)",
+        price: "R$ 150,00",
+        description: "Mais brilho e cuidado para os pequeninos!",
+        features: [
+          "Sorteio",
+          "Agendamento online",
+          "Monitoramento por câmeras",
+          "Produtos premium",
+          "Hidratação especial",
+        ],
+        cta: "Assinar Brilhante",
+        popular: true,
       },
     ],
     Pequeno: [
       {
-        name: "Pacote cães pequenos (até 5kg)",
+        name: "Plano Plus Pequeno (até 5kg)",
         price: "R$ 160,00",
         description: "Ideal para pets pequenos que gostam de um bom banho!",
         features: [
@@ -36,15 +50,30 @@ export function PricesSection() {
           "Produtos premium",
           "Acompanhamento",
         ],
-        cta: "Assinar Pacote",
+        cta: "Assinar Plus",
+        popular: false,
+      },
+      {
+        name: "Plano Brilhante Pequeno (até 5kg)",
+        price: "R$ 190,00",
+        description: "Para um brilho único e cuidados completos!",
+        features: [
+          "Sorteio",
+          "Agendamento online",
+          "Monitoramento por câmeras",
+          "Produtos premium",
+          "Acompanhamento",
+          "Hidratação especial",
+        ],
+        cta: "Assinar Brilhante",
         popular: true,
       },
     ],
     Médio: [
       {
-        name: "Pacote cães médios (até 10kg)",
+        name: "Plano Plus Médio (até 10kg)",
         price: "R$ 300,00",
-        description: "Ideal para pets de médio porte, com muito amor e cuidado!",
+        description: "Muito amor e cuidado para pets médios!",
         features: [
           "Sorteio",
           "Agendamento online",
@@ -52,15 +81,30 @@ export function PricesSection() {
           "Produtos premium",
           "Acompanhamento veterinário",
         ],
-        cta: "Assinar Pacote",
+        cta: "Assinar Plus",
+        popular: false,
+      },
+      {
+        name: "Plano Brilhante Médio (até 10kg)",
+        price: "R$ 350,00",
+        description: "Cuidado brilhante para os medianos peludos!",
+        features: [
+          "Sorteio",
+          "Agendamento online",
+          "Monitoramento por câmeras",
+          "Produtos premium",
+          "Acompanhamento veterinário",
+          "Hidratação especial",
+        ],
+        cta: "Assinar Brilhante",
         popular: true,
       },
     ],
     Grande: [
       {
-        name: "Pacote cães grandes (até 25kg)",
+        name: "Plano Plus Grande (até 25kg)",
         price: "R$ 400,00",
-        description: "Perfeito para os grandões que exigem mais dedicação!",
+        description: "Mais conforto e atenção para os grandões!",
         features: [
           "Sorteio",
           "Agendamento online",
@@ -68,15 +112,32 @@ export function PricesSection() {
           "Produtos premium",
           "Escovação",
         ],
-        cta: "Assinar Pacote",
+        cta: "Assinar Plus",
         popular: false,
+      },
+      {
+        name: "Plano Brilhante Grande (até 25kg)",
+        price: "R$ 450,00",
+        description: "Destaque e hidratação para os maiores!",
+        features: [
+          "Banhos ilimitados",
+          "Sorteio",
+          "Agendamento online",
+          "Monitoramento por câmeras",
+          "Produtos premium",
+          "Escovação especial",
+          "Transporte incluso",
+          "Hidratação especial",
+        ],
+        cta: "Assinar Brilhante",
+        popular: true,
       },
     ],
     "Muito Grande": [
       {
-        name: "Pacote cães muito grandes (acima de 25kg)",
+        name: "Plano Plus Muito Grande (acima de 25kg)",
         price: "R$ 500,00",
-        description: "Para os gigantes peludos, com carinho e estrutura adequada!",
+        description: "Cuidado ideal para os gigantes peludos!",
         features: [
           "Sorteio",
           "Agendamento online",
@@ -85,8 +146,25 @@ export function PricesSection() {
           "Escovação especial",
           "Transporte incluso",
         ],
-        cta: "Assinar Pacote",
+        cta: "Assinar Plus",
         popular: false,
+      },
+      {
+        name: "Plano Brilhante Muito Grande (acima de 25kg)",
+        price: "R$ 550,00",
+        description: "Para os maiores e mais brilhantes amigos!",
+        features: [
+          "Banhos ilimitados",
+          "Sorteio",
+          "Agendamento online",
+          "Monitoramento por câmeras",
+          "Produtos premium",
+          "Escovação especial",
+          "Transporte incluso",
+          "Hidratação especial",
+        ],
+        cta: "Assinar Brilhante",
+        popular: true,
       },
     ],
   };
@@ -105,10 +183,13 @@ export function PricesSection() {
         >
           <Badge className="rounded-full px-4 py-1.5 text-sm font-medium">Planos</Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Simples, Transparente e Sem Surpresas
+            Simples, <strong>Brilhante</strong> e Sem Surpresas
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Escolha o plano ideal para o seu negócio de estética. Todos os planos incluem 14 dias grátis, sem compromisso.
+            Escolha o plano que melhor se adapta ao seu pet e aproveite banhos premium com todo o cuidado e carinho que ele merece. 
+            <strong> Atencão:</strong> Raças como: Chow Chow , Husky , Samoeida, Golden, Pastor alemão
+            Será cobrado o valor do gigante pela quantidade de pelagem.
+
           </p>
         </motion.div>
 
@@ -126,7 +207,7 @@ export function PricesSection() {
 
             {Object.entries(plansData).map(([size, plans]) => (
               <TabsContent key={size} value={size}>
-                <div className="grid gap-6 lg:grid-cols-1 lg:gap-8 justify-center">
+                <div className="grid gap-6 lg:grid-cols-2 lg:gap-8 justify-center">
                   {plans.map((plan, i) => (
                     <motion.div
                       key={i}
