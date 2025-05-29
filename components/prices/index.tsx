@@ -186,8 +186,8 @@ export function PricesSection() {
             Simples, <strong>Brilhante</strong> e Sem Surpresas
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Escolha o plano que melhor se adapta ao seu pet e aproveite banhos premium com todo o cuidado e carinho que ele merece. 
-            <strong> Atencão:</strong> Raças como: Chow Chow , Husky , Samoeida, Golden, Pastor alemão
+            Escolha o plano que melhor se adapta ao seu pet e aproveite banhos premium com todo o cuidado e carinho que ele merece.
+            <strong> Atenção:</strong> Raças como: Chow Chow , Husky , Samoeida, Golden, Pastor alemão
             Será cobrado o valor do gigante pela quantidade de pelagem.
 
           </p>
@@ -198,7 +198,7 @@ export function PricesSection() {
             <div className="flex justify-center mb-8 overflow-x-auto scrollbar-none">
               <TabsList className="rounded-full p-1 min-w-max">
                 {Object.keys(plansData).map((key) => (
-                  <TabsTrigger key={key} value={key} className="rounded-full px-4 sm:px-6 text-sm sm:text-base whitespace-nowrap">
+                  <TabsTrigger key={key} value={key} className="cursor-pointer rounded-full px-4 sm:px-6 text-sm sm:text-base whitespace-nowrap">
                     {key}
                   </TabsTrigger>
                 ))}

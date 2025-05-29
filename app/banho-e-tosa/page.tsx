@@ -14,8 +14,8 @@ export default function MainPage() {
             <Header />
             <HeroSection />
             <ServicesSection />
-            <CtaSection />
             <PricesSection />
+            <CtaSection />
             <Steps />
             <Footer />
         </>
